@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[user]
+	email = steffen@colding-joergensen.com
+	name = Steffen M. Colding-Jørgensen
+[http]
+	sslCAinfo = /etc/ssl/certs/ca-certificates.crt
