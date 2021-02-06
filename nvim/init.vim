@@ -60,4 +60,7 @@ let g:vimwiki_markdown_link_ext = 1
 let g:taskwiki_markup_syntax = 'markdown'
 let g:markdown_folding = 0
 
+
 au BufNewFile,BufRead *.md  setf markdown
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
