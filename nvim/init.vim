@@ -7,6 +7,7 @@
 "╚═╝╚═╝░░╚══╝╚═╝░░░╚═╝░░░╚═╝░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝
 "
 set relativenumber 
+set number
 set autoindent
 set smartindent
 set lazyredraw
@@ -22,6 +23,8 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
 set list
 set colorcolumn=80
 set nocompatible
+nnoremap <esc> :noh<return><esc>
+
 filetype plugin indent on
 syntax on
 
@@ -34,12 +37,12 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'prabirshrestha/async.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'morhetz/gruvbox'
 Plug 'gruvbox-community/gruvbox'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vimwiki/vimwiki'
 Plug 'plasticboy/vim-markdown'
 Plug 'tools-life/taskwiki'
+Plug 'tpope/vim-dispatch'
 " #Plug 'tbabej/taskwiki'
 
 call plug#end()
